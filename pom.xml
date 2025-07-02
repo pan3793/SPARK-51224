@@ -14,7 +14,7 @@
 
     <properties>
         <java.version>17</java.version>
-        <maven.version>4.0.0-rc-2</maven.version>
+        <maven.version>4.0.0-rc-4</maven.version>
         <scala.binary.version>2.13</scala.binary.version>
         <scalatest.version>3.2.19</scalatest.version>
     </properties>
@@ -37,6 +37,7 @@
         </dependency>
         <dependency>
             <groupId>org.scalatest</groupId>
+            <!-- issue gone after replacing the "${scala.binary.version}" with "2.13" -->
             <artifactId>scalatest_${scala.binary.version}</artifactId>
             <scope>test</scope>
         </dependency>
